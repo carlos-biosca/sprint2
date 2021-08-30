@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <!-- Option 1 Link-->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    /> -->
+    <!-- Option 2 Download-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>wheels landing page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <!-- Logo brand -->
+      <a class="navbar-brand d-none d-lg-block" href="#">
+        <img
+          src="./images/bicycle.svg"
+          alt=""
+          width="70"
+          height="50"
+          class="d-inline-block"
+        />
+      </a>
+
+      <div class="btn-group order-lg-3" role="group" aria-label="Basic example">
+        <!-- Button trigger modal login -->
+        <button
+          type="button"
+          class="btn btn-dark"
+          data-toggle="modal"
+          data-target="#staticBackdrop"
+        >
+          Login
+        </button>
+        <!-- Button trigger modal register -->
+        <button
+          type="button"
+          class="btn btn-dark"
+          data-toggle="modal"
+          data-target="#staticBackdrop2"
+        >
+          Register
+        </button>
+      </div>
+
+      <!-- Modal login-->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="Email1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="Email1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="Password1">Password</label>
+                  <input type="password" class="form-control" id="Password1" />
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-checkCheck1" />
+                  <label class="form-check-Check1">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-outline-light">
+                  Login
+                </button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="text-light">Forgot Password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal register-->
+      <div
+        class="modal fade"
+        id="staticBackdrop2"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark text-light">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Register</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <label class="sr-only" for="GroupUsername2">Full name</label>
+                <div class="input-group my-3 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="bi bi-person-fill"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="GroupUsername2"
+                    placeholder="Full name"
+                  />
+                </div>
+                <label class="sr-only" for="Groupemail2">Email Address</label>
+                <div class="input-group mb-3 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="bi bi-envelope-fill"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Groupemail2"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <label class="sr-only" for="Groupphone2">Phone Number</label>
+                <div class="input-group mb-3 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="bi bi-telephone-fill"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Groupphone2"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <label class="sr-only" for="Grouppassword2"
+                  >Create Password</label
+                >
+                <div class="input-group mb-3 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="bi bi-shield-lock-fill"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Grouppassword2"
+                    placeholder="Create Password"
+                  />
+                </div>
+                <label class="sr-only" for="Groupconfirm2"
+                  >Create Password</label
+                >
+                <div class="input-group mb-4 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="bi bi-shield-fill-check"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Groupconfirm2"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+                <button type="submit" class="btn btn-outline-light float-right">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu toggle -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav pt-3 pt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OUR BIKES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GET IN TOUCH</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- title -->
+    <h1 class="display-3 text-light text-center font-weight-bold">WHEELS</h1>
+
+    <!-- carousel -->
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./images/pexels-burst-545004.jpg"
+            class="d-block"
+            alt="bicycle1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/pexels-pixabay-276517.jpg"
+            class="d-block"
+            alt="bicycle2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/pexels-pixabay-163704.jpg"
+            class="d-block"
+            alt="bicycle3"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/pexels-philipp-m-100582.jpg"
+            class="d-block"
+            alt="bicycle4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer
+      class="footer fixed-bottom bg-light text-dark border border-secondary"
+    >
+      <div class="container-fluid">
+        <div class="row align-items-center px-lg-3">
+          <div class="d-flex align-items-center pl-3 col-7 col-lg-4">
+            <div class="footer__image"></div>
+            <div class="footer__user pl-3">
+              <p class="mb-0 font-weight-bold">SELECTED AND RIDDEN BY</p>
+              <small class="mb-0">Lewis Day</small>
+            </div>
+          </div>
+          <blockquote class="d-none d-lg-block col-lg-5 mb-0">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            provident possimus id quod quis debitis quisquam blanditiis."
+          </blockquote>
+          <div
+            class="
+              footer__link
+              d-flex
+              align-items-center
+              justify-content-around
+              border-left border-secondary
+              col-5 col-lg-3
+            "
+          >
+            <div class="link-text p-2">
+              <h6 class="font-weight-bold">VIEW OUR BIKES</h6>
+              <small class="d-none d-md-block">CREATED BY THE BEST</small>
+            </div>
+            <a href="#"><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-- Option 2 Download -->
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(".carousel").carousel({
+        pause: "false"
+      });
+    </script>
+  </body>
+</html>

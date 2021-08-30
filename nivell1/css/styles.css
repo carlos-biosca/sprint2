@@ -1,0 +1,120 @@
+body {
+  background-color: #343a40;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.close {
+  color: #fff;
+  opacity: 1;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-check {
+  padding-left: 0;
+}
+
+.display-3 {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.carousel-item img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+
+.footer {
+  min-height: 100px;
+}
+
+.footer__link {
+  height: 100px;
+}
+
+.footer__image {
+  background-image: url(../images/mostafa-kordzangeneh-_tcJW4nqVtw-unsplash.jpg);
+  background-position: center top;
+  background-size: 75px 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.footer__user p {
+  font-size: 0.5rem;
+}
+
+.footer__link a {
+  color: black;
+  font-size: 30px;
+}
+
+.footer__link a:focus {
+  color: royalblue;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .footer__user p {
+    font-size: 0.9rem;
+  }
+
+  .link-text h6 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Laptop */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .btn-group {
+    width: 150px;
+  }
+
+  .navbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .navbar .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .navbar-expand-lg {
+    justify-content: space-between;
+  }
+
+  .display-3 {
+    font-size: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .carousel-item img {
+    height: 60vh;
+  }
+
+  .footer__link a:hover {
+    color: royalblue;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .display-3 {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+
+  .link-text h6 {
+    font-size: 1.4rem;
+  }
+}
